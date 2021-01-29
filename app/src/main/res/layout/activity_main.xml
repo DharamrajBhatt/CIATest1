@@ -8,90 +8,125 @@
 
     <TextView
         android:id="@+id/tt"
-        android:layout_width="419dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:gravity="center"
         android:text="Toll Fee Collector"
+        android:textColor="#9C27B0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
 
     <TextView
         android:id="@+id/showCount"
-        android:layout_width="82dp"
-        android:layout_height="67dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginLeft="76dp"
-        android:layout_marginBottom="48dp"
+        android:layout_width="128dp"
+        android:layout_height="131dp"
+        android:gravity="center"
         android:text="@string/cnt"
-        app:layout_constraintBottom_toTopOf="@+id/two"
-        app:layout_constraintEnd_toStartOf="@+id/showAmount"
-        app:layout_constraintHorizontal_bias="0.067"
+        android:textColor="#BA1E1E"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tt"
-        app:layout_constraintVertical_bias="0.569" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181" />
 
     <TextView
         android:id="@+id/showAmount"
-        android:layout_width="82dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginRight="96dp"
-        android:layout_marginBottom="64dp"
+        android:layout_width="148dp"
+        android:layout_height="127dp"
+        android:gravity="center"
         android:text="@string/amt"
-        app:layout_constraintBottom_toTopOf="@+id/two"
+        android:textColor="#8BC34A"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tt"
-        app:layout_constraintVertical_bias="0.574" />
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18" />
 
     <Button
         android:id="@+id/two"
-        android:layout_width="0dp"
+        android:layout_width="526dp"
         android:layout_height="wrap_content"
+        android:background="#4CAF50"
         android:onClick="addTwoWheeler"
         android:text="2 Wheeler"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="389dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
 
     <Button
         android:id="@+id/four"
-        android:layout_width="0dp"
+        android:layout_width="526dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:onClick="addForWheeler"
-        android:text="Button"
+        android:text="4 Wheeler"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/two" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/truck"
-        android:layout_width="0dp"
+        android:layout_width="526dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
         android:onClick="addTruck"
-        android:text="Button"
+        android:text="truck/bus"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/four" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604" />
 
     <Button
         android:id="@+id/vip"
-        android:layout_width="0dp"
+        android:layout_width="526dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
         android:onClick="addvip"
-        android:text="Button"
+        android:text="Vip"
+        app:backgroundTint="#4CAF50"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/truck"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722" />
+
+    <Button
+        android:id="@+id/rfid"
+        android:layout_width="526dp"
+        android:layout_height="wrap_content"
+        android:onClick="addRfid"
+        android:text="RFID"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:onClick="reset"
+        app:backgroundTint="#E41414"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.915" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

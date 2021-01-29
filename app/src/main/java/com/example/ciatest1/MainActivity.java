@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private double fourWheelerAmount = 200.00;
     private double truckAmount = 400.00;
     private double vipAmount = 0.00;
+    private double RfidAmount = 50.00;
     private TextView mShowAmount;
 
 
@@ -49,6 +50,20 @@ public class MainActivity extends AppCompatActivity {
     public void addvip(View view) {
         ++mCount;
         mAmount = mAmount + vipAmount;
+        mShowCount.setText(Integer.toString(mCount));
+        mShowAmount.setText(Double.toString(mAmount));
+    }
+
+    public void addRfid(View view) {
+        ++mCount;
+        mAmount = mAmount + RfidAmount;
+        mShowCount.setText(Integer.toString(mCount));
+        mShowAmount.setText(Double.toString(mAmount));
+    }
+
+    public void reset(View view) {
+        mCount = 0;
+        mAmount = 0;
         mShowCount.setText(Integer.toString(mCount));
         mShowAmount.setText(Double.toString(mAmount));
     }
